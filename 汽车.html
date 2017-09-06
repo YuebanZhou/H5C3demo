@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,body {
+            height: 100%;
+        }
+        body {
+            position: relative;
+        }
+        div {
+            width: 240px;
+            position: absolute;
+            top: 50%;
+            transform: translate(100px,-50%);
+            animation: run 5s forwards infinite;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+        @keyframes run {
+            0% {
+
+            }
+            15% {
+                transform: translate(0,-50%) skew(10deg);
+            }
+            80% {
+                transform: translate(1000px,-50%) skew(-10deg);
+                animation-timing-function: ease-in;
+            }
+            100% {
+                transform: translate(1000px,-50%) skew(0deg);
+                /*transform-origin: right bottom;*/
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="img/car.jpg" alt=""/>
+</div>
+</body>
+</html>

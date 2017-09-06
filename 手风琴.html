@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .all {
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+        }
+
+        p {
+            height: 35px;
+            line-height: 35px;
+            padding-left: 30px;
+            border-bottom: 2px solid #ccc;
+            font-size: 14px;
+            color: #fff;
+            background-color: dodgerblue;
+            transition: all 1s;
+        }
+        .spe {
+            height: 0;
+            background-color: cadetblue;
+            transition: all 1s;
+        }
+        .list:hover p {
+            background-color: purple;
+        }
+        .list:hover .spe {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="list">
+        <p>新闻</p>
+        <div class="spe"></div>
+    </div>
+    <div class="list">
+        <p>新闻</p>
+        <div class="spe"></div>
+    </div>
+    <div class="list">
+        <p>新闻</p>
+        <div class="spe"></div>
+    </div>
+    <div class="list">
+        <p>新闻</p>
+        <div class="spe"></div>
+    </div>
+</div>
+</body>
+</html>

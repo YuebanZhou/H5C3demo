@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .big {
+            width: 1250px;
+            height: 320px;
+            padding-left: 20px;
+            margin: 80px auto;
+        }
+        .small {
+            width: 230px;
+            height: 300px;
+            text-align: center;
+            margin-right: 20px;
+            background-color: #fff;
+            float: left;
+            position: relative;
+            top: 0;
+            overflow: hidden;
+            transition: all 1s;
+        }
+        .pic {
+            margin-top: 30px;
+        }
+        .spe {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            background-color: orange;
+            bottom: -100px;
+            transition:all 1s;
+        }
+        .small:hover{
+            margin-top: -10px;
+            box-shadow: 0 0 5px orange;
+        }
+        .small:hover .spe{
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="big">
+    <div class="small">
+        <img src="img/gd1.jpg" alt=""/>
+        <div class="spe"></div>
+    </div>
+    <div class="small">
+        <img src="img/gd2.jpg" class="pic" alt=""/>
+        <div class="spe"></div>
+    </div>
+    <div class="small">
+        <img src="img/gd3.jpg" class="pic" alt=""/>
+        <div class="spe"></div>
+    </div>
+    <div class="small">
+        <img src="img/gd4.jpg" class="pic" alt=""/>
+        <div class="spe"></div>
+    </div>
+    <div class="small">
+        <img src="img/gd5.jpg" class="pic" alt=""/>
+        <div class="spe"></div>
+    </div>
+</div>
+</body>
+</html>

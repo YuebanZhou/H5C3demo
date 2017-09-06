@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        body {
+            height: 600px;
+            overflow: hidden;
+        }
+        .big {
+            height: 100%;
+            background-color: orange;
+            position: relative;
+        }
+        .rocket img {
+            width: 50px;
+            height: 95px;
+        }
+        .rocket {
+            width: 50px;
+            height: 95px;
+            position: absolute;
+            bottom: 0;
+            left: 100px;
+            transform: translate(0,20px) rotate(0deg);
+            transition: all 4s linear;
+        }
+        .big:hover .rocket {
+            transform: translate(500px,-500px) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<div class="big">
+    <div class="rocket">
+        <img src="img/rocket.png" alt=""/>
+    </div>
+</div>
+
+</body>
+</html>

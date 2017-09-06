@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .words {
+            width: 800px;
+            height: 200px;
+            margin-top: 100px;
+            text-align: center;
+            line-height: 1;
+            font-size: 100px;
+
+        }
+        .words span {
+            font-family: "华文行楷";
+            color: #333;
+            display: inline-block;
+            position: relative;
+        }
+        .words span:before,
+        .words span:after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 1s;
+            transform-origin: left center;
+        }
+        .words span:before {
+            color: #ccc;
+
+        }
+        .words span:after {
+            color: #000;
+        }
+        body:hover span:before {
+            transform: rotateY(40deg) skew(0deg,15deg);
+        }
+        body:hover span:after {
+            transform: rotateY(60deg) skew(0deg,10deg);
+        }
+    </style>
+</head>
+<body>
+<div class="words">
+    <span data-text="妖">妖</span>
+    <span data-text="精">精</span>
+    <span data-text="的">的</span>
+    <span data-text="尾">尾</span>
+    <span data-text="巴">巴</span>
+</div>
+</body>
+</html>

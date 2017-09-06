@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul {
+            margin-top: 100px;
+            text-align: center;
+            list-style: none;
+        }
+        li {
+            float: left;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+            transition: all 1s;
+            transform-style: preserve-3d;
+        }
+        span {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        li span:nth-child(1) {
+            background-color: pink;
+            transform: rotateX(90deg) translateZ(20px);
+        }
+        li span:nth-child(2) {
+            background-color: skyblue;
+            transform: translateZ(20px);
+        }
+        li:hover {
+            transform: rotateX(-90deg);
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>
+        <span>火龙</span>
+        <span>纳兹</span>
+    </li>
+    <li>
+        <span>铁龙</span>
+        <span>葛吉尔</span>
+    </li>
+    <li>
+        <span>天龙</span>
+        <span>温蒂</span>
+    </li>
+    <li>
+        <span>雷龙</span>
+        <span>拉库萨斯</span>
+    </li>
+    <li>
+        <span>光龙</span>
+        <span>斯汀</span>
+    </li>
+    <li>
+        <span>影龙</span>
+        <span>罗格</span>
+    </li>
+</ul>
+</body>
+</html>

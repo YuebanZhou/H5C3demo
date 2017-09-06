@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #b3c04c;
+        }
+        .wallet {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 2s;
+        }
+        .wallet:before,.wallet:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /*background-color: red;*/
+            border-radius: 50%;
+            background-image: url("img/qbbg.png");
+            transform-style: preserve-3d;
+        }
+        .wallet:before {
+            background-position: right top;
+            transform: rotateY(-180deg);
+        }
+        .wallet:after {
+            background-position: left top;
+            transform: translateZ(2px);
+        }
+        .wallet:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="wallet"></div>
+</body>
+</html>
